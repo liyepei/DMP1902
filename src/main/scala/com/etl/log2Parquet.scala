@@ -4,11 +4,15 @@ import com.util.{SchemaUtils, Str2Type}
 import org.apache.spark.SparkConf
 import org.apache.spark.rdd.RDD
 import org.apache.spark.sql.{Row, SparkSession}
+
+
 /**
   * 格式转换
   */
 object log2Parquet {
+
   def main(args: Array[String]): Unit = {
+
     // 配置hadoop环境变量
     System.setProperty("hadoop.home.dir","D:\\installed\\hadoop-2.8.1")
     // 获取参数值
@@ -122,5 +126,7 @@ object log2Parquet {
     val df = spark.sqlContext.createDataFrame(rdd,SchemaUtils.logStructType)
     // 存储数据
     df.write.parquet(outputPath)
+
+
   }
 }

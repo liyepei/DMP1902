@@ -2,9 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10355a35-fe30-423f-80f8-4a482cd4b0de" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/etl/log2Parquet.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/util/SchemaUtils.scala" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/scala/com/util/Str2Type.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/app/LocationRpt.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/app/LocationRptV2.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/app/appRpt.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/context/TagsAPP.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/context/TagsAd.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/context/TagsBusiness.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/context/TagsContext.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/context/TagsDev.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/context/TagsKeyWord.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/etl/Data2MySQL.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/util/AmapUtil.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/util/HttpsUtil.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/util/JedisConnectionPool.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/util/RtbUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/util/TagUtils.scala" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/scala/com/util/Tags.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/._SUCCESS.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/.part-00000-337d9569-9174-4ad5-8b0a-4adb6c1a31d4-c000.snappy.parquet.crc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/_SUCCESS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/1/part-00000-337d9569-9174-4ad5-8b0a-4adb6c1a31d4-c000.snappy.parquet" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/com/etl/log2Parquet.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/etl/log2Parquet.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/etl/log2Parquet$$anonfun$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/etl/log2Parquet$$anonfun$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/etl/log2Parquet$$anonfun$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/etl/log2Parquet$$anonfun$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/etl/log2Parquet$$anonfun$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/etl/log2Parquet$$anonfun$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/etl/log2Parquet$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/etl/log2Parquet$.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,11 +100,10 @@
       <recent name="D:\DMP1902\src\main\scala" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="log2Parquet" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.etl.log2Parquet" />
+  <component name="RunManager" selected="Application.Data2MySQL">
+    <configuration name="Data2MySQL" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.etl.Data2MySQL" />
       <module name="DMP1902" />
-      <option name="PROGRAM_PARAMETERS" value="D:\input\2016-10-01_06_p1_invalid.1475274123982.log 1" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.etl.*" />
@@ -91,8 +114,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="log2Parquet" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.etl.log2Parquet" />
+      <module name="DMP1902" />
+      <option name="PROGRAM_PARAMETERS" value="D:\input\2016-10-01_06_p1_invalid.1475274123982.log D:\output\1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.etl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.log2Parquet" />
+      <item itemvalue="Application.Data2MySQL" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Data2MySQL" />
         <item itemvalue="Application.log2Parquet" />
       </list>
     </recent_temporary>
@@ -121,37 +163,63 @@
       <updated>1582723602887</updated>
       <workItem from="1582723606293" duration="279000" />
       <workItem from="1582723896767" duration="584000" />
-      <workItem from="1582724575689" duration="3218000" />
+      <workItem from="1582724575689" duration="3675000" />
+      <workItem from="1582778586139" duration="636000" />
+      <workItem from="1582795767666" duration="148000" />
+      <workItem from="1582805739040" duration="1549000" />
+      <workItem from="1582852768350" duration="141000" />
+      <workItem from="1582853043773" duration="17000" />
+      <workItem from="1582943919192" duration="1047000" />
     </task>
+    <task id="LOCAL-00001" summary="DMP日志字段属性">
+      <created>1582728974625</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1582728974625</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="DMP日志字段属性" />
+    <option name="LAST_COMMIT_MESSAGE" value="DMP日志字段属性" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="223" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582728552547">
+    <state x="223" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582806536662">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="223" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1582728552547" />
-    <state width="1493" height="200" key="GridCell.Tab.0.bottom" timestamp="1582728784075">
+    <state x="223" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1582806536662" />
+    <state x="296" y="8" key="CommitChangelistDialog2" timestamp="1582728973119">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="200" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1582728784075" />
-    <state width="1493" height="200" key="GridCell.Tab.0.center" timestamp="1582728784075">
+    <state x="296" y="8" key="CommitChangelistDialog2/0.0.1536.834@0.0.1536.834" timestamp="1582728973119" />
+    <state width="1493" height="199" key="GridCell.Tab.0.bottom" timestamp="1582807288215">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="200" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1582728784075" />
-    <state width="1493" height="200" key="GridCell.Tab.0.left" timestamp="1582728784075">
+    <state width="1493" height="199" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1582807288215" />
+    <state width="1493" height="199" key="GridCell.Tab.0.center" timestamp="1582807288215">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="200" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1582728784075" />
-    <state width="1493" height="200" key="GridCell.Tab.0.right" timestamp="1582728784075">
+    <state width="1493" height="199" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1582807288215" />
+    <state width="1493" height="199" key="GridCell.Tab.0.left" timestamp="1582807288215">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state width="1493" height="200" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1582728784075" />
+    <state width="1493" height="199" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1582807288215" />
+    <state width="1493" height="199" key="GridCell.Tab.0.right" timestamp="1582807288215">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="199" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1582807288215" />
     <state x="270" y="0" key="SettingsEditor" timestamp="1582728539557">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="270" y="0" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1582728539557" />
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2" timestamp="1582729006879">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="151" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1582729006879" />
   </component>
 </project>
